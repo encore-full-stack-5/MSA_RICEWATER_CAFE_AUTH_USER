@@ -18,3 +18,12 @@ logging:
   level:
     org.springframework.security: trace
     com.example.auth: info
+server:
+  port: 0
+eureka:
+  client:
+    service-url:
+      defaultZon: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: Hi:imAuth
